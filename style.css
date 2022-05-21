@@ -1,0 +1,263 @@
+:root
+{
+    --background: #8B9EB7;
+    --bg-home: #FE6847;
+    --bg-about: #37505C;
+    --bg-products: #F4D35E;
+    --bg-contact: #464D77;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    overflow: hidden;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.home
+{
+    transition: 2s;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-home);
+    transform: translate(-100%);
+}
+.home-icon
+{
+    background-color: var(--bg-home);
+    align-items: center;
+    text-align: right;
+    transform: translate(2%);
+    border-radius: 50px;
+    padding: .5em;
+    transition: .5s;
+    box-shadow: 0 0 10px black;
+}
+.home-icon i
+{
+    font-size: 1.4em;
+    transition: 1s;
+}
+.home-icon:hover i
+{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.home-icon:hover
+{
+    transform: translate(3%);   
+    cursor: pointer; 
+}
+.home.active
+{
+    transition: 2s;
+    transform: translate(0);
+}
+.home.active .home-icon
+{
+    transform: translate(0);
+    border-radius: 0;
+}
+.home.active i
+{
+    transform: translate(-50vw);
+    transition: 2s;
+}
+.home-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.home-container h1
+{
+    font-size: 10em;
+    width: 100vw;
+    color: transparent;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url(climbing.jpg);
+    background-size: 60%;
+    background-position: center;
+    -webkit-background-clip: text;
+}
+.home-container h2
+{
+    font-size: 3em;
+}
+.home-container p
+{
+    margin-top: 1em;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 50vw;
+    text-align: center;
+}
+
+.about
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-about);
+    transform: translate(-100%);
+    transition: 2s;
+}
+.about-icon
+{
+    background-color: var(--bg-about);
+    align-items: center;
+    text-align: right;
+    transform: translate(2%, 39px);
+    border-radius: 50px;
+    padding: .5em;
+    transition: .5s;
+    box-shadow: 0 0 10px black;
+}
+.about-icon i
+{
+    font-size: 1.4em;
+    transition: .5s;
+}
+.about-icon:hover i
+{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.about-icon:hover
+{
+    transform: translate(3%, 39px);    
+    cursor: pointer;
+}
+.about.active
+{
+    transition: 2s;
+    transform: translate(0);
+}
+.about.active .about-icon
+{
+    transform: translate(0);
+    border-radius: 0;
+}
+.about.active i
+{
+    transform: translate(-50vw);
+    transition: 2s;
+}
+
+.products
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-products);
+    transform: translate(-100%);
+    transition: 2s;
+}
+.products-icon
+{
+    background-color: var(--bg-products);
+    align-items: center;
+    text-align: right;
+    transform: translate(2%, 78px);
+    border-radius: 50px;
+    padding: .5em;
+    transition: .5s;
+    box-shadow: 0 0 10px black;
+}
+.products-icon i
+{
+    font-size: 1.4em;
+    transition: .5s;
+}
+.products-icon:hover i
+{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.products-icon:hover
+{
+    transform: translate(3%, 78px);
+    cursor: pointer;
+}
+.products.active
+{
+    transition: 2s;
+    transform: translate(0);
+}
+.products.active .products-icon
+{
+    transform: translate(0);
+    border-radius: 0;
+}
+.products.active i
+{
+    transform: translate(-50vw);
+    transition: 2s;
+}
+
+.contact
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-contact);
+    transform: translate(-100%);
+    transition: 2s;
+}
+.contact-icon
+{
+    background-color: var(--bg-contact);
+    align-items: center;
+    text-align: right;
+    transform: translate(2%, 117px);
+    border-radius: 50px;
+    padding: .5em;
+    transition: .5s;
+    box-shadow: 0 0 10px black;
+}
+.contact-icon i
+{
+    font-size: 1.4em;
+    transition: .5s;
+}
+.contact-icon:hover i
+{
+    cursor: pointer;
+    color: whitesmoke;
+}
+.contact-icon:hover
+{
+    transform: translate(3%, 117px);
+    cursor: pointer;
+}
+.contact.active
+{
+    transition: 2s;
+    transform: translate(0);
+}
+.contact.active .contact-icon
+{
+    transform: translate(0);
+    border-radius: 0;
+}
+.contact.active i
+{
+    transform: translate(-50vw);
+    transition: 2s;
+}
